@@ -69,3 +69,10 @@ document
       }
     });
   });
+//Exercicio 4
+
+document.querySelector("#nova-tarefa-nome").addEventListener("keyup", (e) => {
+  if (e.key == "Enter" && e.target.value != "") {
+    adicionartarefa();
+  }
+});
